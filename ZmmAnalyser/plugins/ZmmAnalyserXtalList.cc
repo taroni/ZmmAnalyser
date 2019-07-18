@@ -401,7 +401,7 @@ ZmmAnalyserXtalList::analyze(const edm::Event& iEvent, const edm::EventSetup& iS
 	float neigh8=0.;
 
 	//take the 3x3 matrix around the recovered hit
-	v_id = EcalClusterTools::matrixDetId( topology, idCurrent, -1, 1, -1, 1 );
+	v_id = EcalClusterTools::matrixDetId( topology, idCurrent, 1 );
 	std::vector<float> vEn_, vIeta_, vIphi_, vDphimu1_, vDphimu2_, vDetamu1_, vDetamu2_;
 	float sum8=0; //initialize the sum8
 
